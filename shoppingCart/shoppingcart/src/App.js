@@ -3,7 +3,9 @@
 import './App.css';
 import Items from './components/Items';
 import Navbar from './components/NavBar';
+import CartModel from '../src/components/CartModel';
 import CustomItemContext, { itemContext } from './ItemContext';
+
 
 
 
@@ -15,8 +17,12 @@ function App() {
         <CustomItemContext>
           <div className='App'>
           <h2>Shopping Cart</h2>
-            <Navbar />
-            <Items />
+          <Navbar/>
+          <Items/>
+
+
+            
+
         </div>
         </CustomItemContext>
         

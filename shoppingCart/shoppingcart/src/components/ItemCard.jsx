@@ -4,7 +4,9 @@ import { useContext } from "react";
 import { useValue } from "../ItemContext";
 
 
-function ItemCard({ name, price }) {
+
+function ItemCard({ name, price, id }) {
+  console.log(name);
   const {handleAdd, handleRemove} = useValue();
   
   
@@ -23,13 +25,14 @@ function ItemCard({ name, price }) {
 
   return (
     <div className={styles.itemCard}>
+      
       <div className={styles.itemName}>{name}</div>
       <div className={styles.itemPrice}>&#x20B9; {price}</div>
       <div className={styles.itemButtonsWrapper}>
-        <button className={styles.itemButton} onClick={() => handleAdd(price)}>
+        <button className={styles.itemButton} onClick={() => handleAdd({id, name, price})}>
           Add
         </button>
-        <button className={styles.itemButton} onClick={() => handleRemove(price)}>
+        <button className={styles.itemButton} onClick={() => handleRemove(id)}>
           Remove
         </button>
       </div>

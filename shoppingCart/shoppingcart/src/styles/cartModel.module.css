@@ -1,0 +1,31 @@
+
+
+.itemContainer div{
+  width: 60%;
+  margin:15px auto 10px auto;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.priceTotal{
+    width:60%;
+    margin: 30px auto 0 auto;
+    background-color: rgb(192, 78, 37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 27px;
+    font-weight: bold;
+
+}
